@@ -35,13 +35,13 @@ const handler = NextAuth({
           });
         }
 
-        return true
+        return true;
       } catch (error) {
         console.log("Error checking if user exists: ", error.message);
-        return false
+        return false;
       }
     },
   }
 })
 
-export { handler as GET, handler as POST }
+export { handler as GET, handler as POST };
